@@ -1,0 +1,1 @@
+{"name":"Local: 13324","url":"/home/zszf/cpp/13324.cpp","tests":[{"id":1721288309755,"input":"9\nF\nE A114514\nE B19260817\nN\nF\nL\nN\nF\nN","output":"Queue is Empty\n2\nA114514\n1\nB19260817\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/zszf/cpp/13324.cpp","group":"local","local":true}
