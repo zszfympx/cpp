@@ -14,7 +14,7 @@ int main(){
     }
     for(int i = 0; i < m; i++){
         scanf("%d%d%d", &x, &y, &z);
-        G[x][y] = z;
+        G[x][y] = min(G[x][y], z);
     }
     for(int k = 1; k <= n; k++){
         for(int i = 1; i <= n; i++){
@@ -22,6 +22,12 @@ int main(){
                 G[i][j] = min(G[i][j], G[i][k] + G[k][j]);
             }
         }
+    }
+    scanf("%d", &x);
+    while(x--){
+        scanf("%d%d", &y, &z);
+        if(G[y][z] > 1e9/2) printf("impossible\n");
+        else printf("%d\n", G[y][z]);
     }
     scanf("%d", &x);
     while(x--){
